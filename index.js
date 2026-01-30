@@ -1,3 +1,13 @@
+const cursor= document.getElementById("cursor")
+window.addEventListener("mousemove", (e)=>{
+    gsap.to("#cursor",{
+        x : e.clientX,
+        y : e.clientY,
+        duration: 0.2,
+        ease : "power2.out"
+    })
+})
+
 gsap.to("#nav", {
     backgroundColor: "#000",
     height: "110px",
@@ -12,3 +22,16 @@ gsap.to("#nav", {
 
     }
 }) 
+
+gsap.to("#main", {
+    backgroundColor : "#000",
+    scrollTrigger: {
+        trigger : "#main",
+        scroller: "body",
+        // markers: true,  
+        start: "top -25%",
+        end: "top -70%",
+        scrub : 2
+    }
+
+})
