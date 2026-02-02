@@ -1,4 +1,5 @@
 const cursor= document.getElementById("cursor")
+const blur = document.getElementById("cursor-blur")
 window.addEventListener("mousemove", (e)=>{
     gsap.to("#cursor",{
         x : e.clientX,
@@ -7,7 +8,7 @@ window.addEventListener("mousemove", (e)=>{
         ease : "power2.out"
     })
 })
-
+ 
 gsap.to("#nav", {
     backgroundColor: "#000",
     height: "110px",
@@ -20,7 +21,7 @@ gsap.to("#nav", {
         end: "top -11%",
         scrub: 1
 
-    }
+    } 
 }) 
 
 gsap.to("#main", {
