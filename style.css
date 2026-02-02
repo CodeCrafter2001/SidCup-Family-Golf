@@ -91,7 +91,7 @@ text-align:center
     width: 100%;
 }
 #scroller{
-    /* background-color: red ; */
+    /* background-color: red ;/ */
     white-space: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
@@ -132,4 +132,9 @@ display: none;
   to {
     transform: translateX(-100%);
   }
+}
+#aboutUs img {
+  width: 0;
+  opacity: 0;
+  position: absolute;
 }
